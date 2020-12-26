@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    
+    <style>
+       form input{
+          margin-block-end: 10px;
+          margin-left: 10px;
+          padding-left: 10px;
+       }
+       form label{
+           margin-left: 10px;
+       }
+       input:hover{
+           background-color: yellow;
+       }
+    </style>
+    <script>
+        
+        
+    </script>
+</head>
+<body>
+    <form action="#" name="formularioContacto">
+       nombre <input type="text" placeholder="Nombre" required pattern="[A-Za-z]+"><br>
+       apellido <input type="text" placeholder="Apellido" required pattern="[A-Za-z]+"><br>
+       edad <input type="number" min="18" max="80" placeholder="Edad"><br>
+       <label for="">sexo</label><br>
+        <label for="">
+            M
+            <input type="radio" name="sex" value="m" required>
+        </label>
+        <label for="">
+            F
+            <input type="radio" name="sex" value="f" required><br>
+        </label>
+        DNI<input type="text" placeholder="DNI" required minlength="8" ><br>
+        Email<input type="email" placeholder="Email" required><br>  
+        <button value="">Enviar</button>
+    </form>
+</body>
+</html>
